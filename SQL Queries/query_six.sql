@@ -1,3 +1,4 @@
+CREATE VIEW query_six AS
 SELECT dept_emp.emp_no, employees.last_name, employees.first_name, departments.dept_name
 FROM dept_emp
 LEFT JOIN employees

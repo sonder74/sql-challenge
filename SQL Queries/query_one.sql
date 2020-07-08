@@ -1,3 +1,4 @@
+CREATE VIEW query_one AS
 SELECT employees.emp_no, last_name, first_name, gender, salary
 FROM employees
 LEFT JOIN salaries

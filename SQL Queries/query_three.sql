@@ -1,3 +1,4 @@
+CREATE VIEW query_three AS
 SELECT dept_manager.dept_no, departments.dept_name, dept_manager.emp_no, employees.last_name, employees.first_name, from_date AS start_date, to_date AS end_date
 FROM dept_manager
 LEFT JOIN employees
