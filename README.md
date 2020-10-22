@@ -1,4 +1,4 @@
-# SQLAlchemy Challenge (Grade: A+)
+# SQL Challenge (Grade: A+)
  
 ### Table of Contents:
 
@@ -6,7 +6,7 @@
  2. [Tools and Solutions](#tools-and-solutions)
  3. [Outcomes and Lessons Learned](#outcomes-and-lessons-learned)
 
-![precipitation](Images/precipitation.png)
+![erd](sql-challenge ERD.png)
 
 
 
