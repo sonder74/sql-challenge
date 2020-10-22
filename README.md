@@ -6,8 +6,6 @@
  2. [Tools and Solutions](#tools-and-solutions)
  3. [Outcomes and Lessons Learned](#outcomes-and-lessons-learned)
 
-![erd](sql-challenge ERD.png)
-
 
 
 
