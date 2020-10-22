@@ -13,7 +13,7 @@ With this project, I was introduced to <a href="https://en.wikipedia.org/wiki/SQ
 I began the assignment by creating an <a href="https://github.com/sonder74/sql-challenge/blob/master/sql-challenge%20ERD.png">entity relationship diagram (ERD)</a> that modeled the different parts of the dataset and the connections they shared. I then joined the source CSV files together using <a href="https://www.postgresql.org/">PostrgeSQL</a>, an open-source database system that allowed me to create SQL tables, perform queries, and save the results for viewing later. The project's bonus section involved a handful of additional tools, like <a href="https://www.python.org/">Python</a>, <a href="https://pandas.pydata.org/">Pandas</a>, and <a href="https://matplotlib.org/">Matplotlib</a>.
 
 ## Outcomes and Lessons Learned
-I succeeded in completing all of this project's SQL <a href="https://github.com/sonder74/sql-challenge/tree/master/SQL%20Queries">queries</a> and view, and I also tackled the bonus coding. You can check out the latter <a href="https://github.com/sonder74/sql-challenge/blob/master/sql-challenge-bonus.ipynb">here</a>.
+I succeeded in completing all of this project's SQL <a href="https://github.com/sonder74/sql-challenge/tree/master/SQL%20Queries">queries</a> and <a href="https://github.com/sonder74/sql-challenge/tree/master/SQL%20Views">views</a>, and I also tackled the bonus coding. You can check out the latter <a href="https://github.com/sonder74/sql-challenge/blob/master/sql-challenge-bonus.ipynb">here</a>.
 
 
 
