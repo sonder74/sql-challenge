@@ -7,10 +7,10 @@
  3. [Outcomes and Lessons Learned](#outcomes-and-lessons-learned)
 
 ## Project Goals
-With this project, I returned to the subect of global climate, beginning with the exploration and analysis of a large set of weather data. Once that analysis was complete and a new set of data tables created, I had to design queries using a methodology new to me: <a href="https://www.sqlalchemy.org/">SQLAlchemy</a>.
+With this project, I was introduced to <a href="https://en.wikipedia.org/wiki/SQL">SQL</a>, a widely used language used for managing relational databases. SQL databases are often large and highly structured, and our classroom instruction focused on querying these datasets and producing tables from the results. This project focused on a set of employee data, and I was expected to design queries with specific outputs in mind.
 
 ## Tools and Solutions
-The first step in my data-gathering process was designing a connection to an <a href="https://www.sqlite.org/index.html">SQLite</a> database provided by the instructor. I used <a href="https://pandas.pydata.org/">Pandas</a> and <a href="https://matplotlib.org/">Matplotlib</a> to wrangle and visualize it contents, and then I created <a href="https://hackersandslackers.com/flask-routes/">Flask API routes</a> that returned <a href="https://www.json.org/json-en.html">JSON</a> lists when queried. I also completed the bonus assignments, using Matplotlib to visualize a series of statistical analyses of the temperature-related data.
+I began the assignment by creating an <a href="https://github.com/sonder74/sql-challenge/blob/master/sql-challenge%20ERD.png">entity relationship diagram (ERD)</a> that modeled the different parts of the dataset and the connections they shared. I then joined the source CSV files together using <a href="https://www.postgresql.org/">PostrgeSQL</a>, an open-source database system that allowed me to create SQL tables, perform queries, and save the results for viewing later.
 
 ## Outcomes and Lessons Learned
 I loved this project! It drew together nearly all of the disciplines that our class has covered to date, and it was our first opportunity to make our own findings available to the web via Flask. I hope to use these tools more in the future. You can check out my code <a href="https://github.com/sonder74/sqlalchemy-challenge/blob/master/sqlalchemy-challenge.ipynb">here</a> and my Flask app <a href="https://github.com/sonder74/sqlalchemy-challenge/blob/master/climate.py">here</a>.
@@ -57,9 +57,43 @@ Inspect the CSVs and sketch out an ERD of the tables. Feel free to use a tool li
 
 * Import each CSV file into the corresponding SQL table.
 
+#### Data Analysis
 
+Once you have a complete database, do the following:
 
+1. List the following details of each employee: employee number, last name, first name, gender, and salary.
 
+2. List employees who were hired in 1986.
+
+3. List the manager of each department with the following information: department number, department name, the manager's employee number, last name, first name, and start and end employment dates.
+
+4. List the department of each employee with the following information: employee number, last name, first name, and department name.
+
+5. List all employees whose first name is "Hercules" and last names begin with "B."
+
+6. List all employees in the Sales department, including their employee number, last name, first name, and department name.
+
+7. List all employees in the Sales and Development departments, including their employee number, last name, first name, and department name.
+
+8. In descending order, list the frequency count of employee last names, i.e., how many employees share each last name.
+
+## Bonus (Optional)
+
+As you examine the data, you are overcome with a creeping suspicion that the dataset is fake. You surmise that your boss handed you spurious data in order to test the data engineering skills of a new employee. To confirm your hunch, you decide to take the following steps to generate a visualization of the data, with which you will confront your boss:
+
+1. Import the SQL database into Pandas. (Yes, you could read the CSVs directly in Pandas, but you are, after all, trying to prove your technical mettle.) This step may require some research. Feel free to use the code below to get started. Be sure to make any necessary modifications for your username, password, host, port, and database name:
+
+   ```sql
+   from sqlalchemy import create_engine
+   engine = create_engine('postgresql://localhost:5432/<your_db_name>')
+   connection = engine.connect()
+   ```
+
+* Consult [SQLAlchemy documentation](https://docs.sqlalchemy.org/en/latest/core/engines.html#postgresql) for more information.
+
+* If using a password, do not upload your password to your GitHub repository. See [https://www.youtube.com/watch?v=2uaTPmNvH0I](https://www.youtube.com/watch?v=2uaTPmNvH0I) and [https://martin-thoma.com/configuration-files-in-python/](https://martin-thoma.com/configuration-files-in-python/) for more information.
+
+2. Create a histogram to visualize the most common salary ranges for employees.
 
 
 
